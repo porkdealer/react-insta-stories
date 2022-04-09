@@ -46,7 +46,7 @@ export const renderer: Renderer = ({ story, action, isPaused, config, messageHan
             })
         });
     }
-
+    console.log("fuck u erik")
     return <WithHeader story={story} globalHeader={config.header}>
         <WithSeeMore story={story} action={action}>
             <div style={styles.videoContainer}>
@@ -62,6 +62,7 @@ export const renderer: Renderer = ({ story, action, isPaused, config, messageHan
                     muted={muted}
                     autoPlay
                     webkit-playsinline="true"
+                    preload="auto"
                 />
                 {!loaded && (
                     <div
