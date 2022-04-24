@@ -14,7 +14,7 @@ export default function () {
 
     let mousedownId = useRef<any>();
     let isMounted = useRef<boolean>(true);
-
+    console.log("hello world")
     const { width, height, loop, currentIndex, isPaused, keyboardNavigation, preventDefault, storyContainerStyles = {} } = useContext<GlobalCtx>(GlobalContext);
     const { stories } = useContext<StoriesContextInterface>(StoriesContext);
 
